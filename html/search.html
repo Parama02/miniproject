@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fake News Identification</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="/css/search.css"/>
+</head>
+<body>
+
+	<header>
+        <div class="wrapper_home">
+            <nav class="shadow">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	<!-- Search form -->
+	<div class="container mt-4">
+		<h2>Search for a News Article</h2>
+		<form action="#" method="post">
+			<div class="form-group">
+				<label for="search-url">Enter the URL of the news article:</label>
+				<input type="text" class="form-control" id="search-url" placeholder="Enter URL" name="search-url">
+			</div>
+			<button type="submit" class="btn btn-primary">Identify</button>
+		</form>
+	</div>
+
+	<!-- Identification result -->
+	<div class="container mt-4">
+		<h2>Identification Result</h2>
+		<div class="card">
+			<div class="card-header">
+				Result Summary
+			</div>
+			<div class="card-body">
+				<p class="card-text">The news article is:</p>
+				<h4 class="card-title" style="color:black;">Fake News</h4>
+				<p class="card-text">Score: 0.9</p>
+			</div>
+		</div>
+		<div class="mt-4">
+			<h4>Reasons for Fake News Identification</h4>
+			<ul>
+				<li>Contains misleading information</li>
+				<li>Uses clickbait headlines</li>
+				<li>Uses biased sources</li>
+				<li>Uses emotional language</li>
+				<li>Has a low credibility score</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container_ft">
+		  <p>Don't fall prey to fake news. Verify before you share. Our mission is to promote truth and accuracy in the news. Join us in the fight against misinformation.</p>
+		</div>
+	</footer>
+	  
+
+</body>
+</html>
+

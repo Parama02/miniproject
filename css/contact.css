@@ -1,0 +1,41 @@
+body{
+    margin:0px;
+    background: #1E242A;
+}
+
+h1{
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 25px 0px;
+}
+.cform{
+    color: aliceblue;
+    text-align: center;
+}
+
+p{
+    color: bisque;
+    text-align:center;
+    font-size: 25px;
+}
+
+.cform input{
+    margin-top: 8px;
+}
+
+.cform #message{
+    margin-top: 8px;
+}
+
+.cform label{
+    font-size: large;
+    color: aqua;
+}
+
+#cbtn{
+    color: green;
+    font-style: bold;
+    background-color: lightgreen;
+    border-radius: 15px;
+}
