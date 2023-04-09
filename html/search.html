@@ -17,11 +17,11 @@
         <div class="wrapper_home">
             <nav class="shadow">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="index.html">Logout</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html">About</a></li>
+                    <li><a href="/index.html">Service</a></li>
+                    <li><a href="/html/contact.html">Contact</a></li>
+                    <li><a href="/index.html">Logout</a></li>
                 </ul>
             </nav>
         </div>
@@ -63,6 +63,39 @@
 			</ul>
 		</div>
 	</div>
+
+	
+<!--
+    <form action="/" method="POST">
+        <label for="search">Search news:</label>
+        <input type="text" id="search" name="search" placeholder="Enter search query" required>
+        <br><br>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if results %}
+    <h2>Search Results</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Text</th>
+                <th>Predicted Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results %}
+            <tr>
+                <td>{{ result[0] }}</td>
+                <td>{{ result[1] }}</td>
+                <td>{{ result[2] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+
+-->
 
 	<footer>
 		<div class="container_ft">

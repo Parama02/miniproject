@@ -7,8 +7,8 @@ body{
 }
 
 #navigation{
-  background-color: violet;
-  box-shadow: 0 1px 4px plum, 0 0 40px lavenderblush inset;
+  background-color: teal;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.3) inset;
 }
 
 /*            */
@@ -112,7 +112,7 @@ body{
 /* text styling  */
 
 .color{
-  color: darkorchid;
+  color: teal;
   font-weight: bolder;
 }
 
@@ -127,13 +127,18 @@ a{
 }
 
 a:hover{
-  color:black;
+
+  background: rgb(26, 187, 196);
+  border-radius: 15%;
+  color: white;
+  transition: .6s;
+  text-decoration: none;
 }
 
 /* footer   */
 
 footer{
-  background-color:violet;
+  background-color:teal;
 }
 
 .ftr_para{
@@ -143,6 +148,6 @@ footer{
 
 /*  scroll effect  */
 
-#about{
+#about, #service{
   scroll-behavior: smooth ;
 }

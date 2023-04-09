@@ -27,19 +27,53 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto fw-bold">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index0.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#service">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Login.html">Login</a>
+                <a class="nav-link" href="/html/contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="login-anchor" href="/html/Login.html">Login</a>
+
+                    <script>
+                      function updateAnchors() {
+                        var isLoggedIn = onUserLoggedIn()/* TODO: check if user is logged in */;
+
+                        if (isLoggedIn) {
+                          document.getElementById("login-anchor").href = "/html/search.html";
+                          document.getElementById("login-anchor").textContent = "Search";
+                        }
+                      }
+
+                      // Call the updateAnchors function when the page loads
+                      window.addEventListener("load", updateAnchors);
+
+                      // Call the updateAnchors function when the user logs in
+                      /* TODO: add code to call updateAnchors when the user logs in */
+
+                      // TODO: Call this function after the user logs in
+                      function onUserLoggedIn() {
+                        updateAnchors();
+                      }
+
+                      // TODO: Check if the user is logged in
+                      function isUserLoggedIn() {
+                        // Return true if the user is logged in, false otherwise
+                      }
+
+                      // Call the updateAnchors function when the user logs in
+                      if (isUserLoggedIn()) {
+                        onUserLoggedIn();
+                      }
+
+                    </script>
+
               </li>
             </ul>
         </div>
@@ -50,9 +84,9 @@
     <!--Navbar end-->
 
     <div class="video-container">
-      <video src="video/1.mp4" autoplay loop muted></video>
+      <video src="video/3.mp4" autoplay loop muted></video>
       <div class="content">
-        <h1>Fake News Detection</h1>
+        <h1 class="mb-3">Fake News Detection</h1>
         <p>In today's age of digital media, misinformation and fake news can spread rapidly and have serious consequences. Our website is dedicated to providing accurate and reliable information to help combat the spread of fake news.</p>
       </div>
     </div>
@@ -67,7 +101,7 @@
             <p class="color display-6"> Using machine learning to detect fake news</p>
             <p class="color display-6"></p>
             <p class=""></p>
-            <button type="button" class="btn btn-dark rounded-pill px-5" herf="">Join Us</button> 
+            <a class="btn btn-dark rounded-pill px-5 py-3" href="/html/Register.html">Join Us</a>
           </div>
           <div class="col">
              <img src="image/8.jpg" class="pic1 img-fluid" >
@@ -80,7 +114,7 @@
 
 
     <!----------------------------section1 cards---------------------------------->
-    <div class="container">
+    <div class="container" id="service">
       <div class="section1 mb-5">
 
         <div class="row cards">
