@@ -1,7 +1,7 @@
 body{
     margin:0px;
     padding: 0px;
-    background: seashell;
+    background:lavenderblush;
     text-align: start;
 }
 
@@ -14,7 +14,7 @@ nav{
     text-align: center;
     height: 60px;
     margin-top: -1em;
-    background: bisque;
+    background: lavender;
 }
 
 nav ul{
@@ -37,7 +37,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background: chocolate;
+    background: darkmagenta;
     color: white;
     transition: .6s;
     text-decoration: none;
@@ -45,7 +45,7 @@ nav ul li a:hover{
 
 .shadow{
     position: relative;
-    box-shadow: 0 1px 4px orange, 0 0 40px orangered inset;
+    box-shadow: 0 1px 4px purple, 0 0 40px purple inset;
 }
 
 .shadow:before,
@@ -53,7 +53,7 @@ nav ul li a:hover{
     content:'';
     position: absolute;
     z-index: -1;
-    box-shadow: 0 0 20px lightsalmon;
+    box-shadow: 0 0 20px violet;
     top: 50%;
     bottom: 0;
     left: 10px;
@@ -74,7 +74,7 @@ h2{
 /* Footer */
 
 footer {
-  background-color: bisque;
+  background-color: violet;
   padding: 20px;
   margin-top: 50px;
   text-align: center;
